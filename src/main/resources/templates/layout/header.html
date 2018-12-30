@@ -1,12 +1,26 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
     <div th:fragment="header-css">
-       
+        <!-- Bootstrap core CSS-->
+    <link th:href="@{/vendors/css/bootstrap.css}" rel="stylesheet">
+
+    <!-- Custom fonts for this template-->
+    <link th:href="@{/vendors/css/all.min.css}" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template-->
+    <link th:href="@{/landpage/css/sb-admin.css}" rel="stylesheet">
+    
+    <script th:src="@{/vendors/js/jquery.min.js}"></script>
     </div>
 </head>
 <body>
 <div th:fragment="header">
-    <!-- this is header -->
+    <!-- this is header
     <nav class="navbar navbar-inverse">
         <div class="container">
             <div class="navbar-header">
@@ -18,7 +32,7 @@
                 </ul>
             </div>
         </div>
-    </nav>
+    </nav> -->
 </div>
 
 </body>

@@ -5,23 +5,16 @@
 </head>
 <body>
 <div th:fragment="footer">
+</div>
+<div th:fragment="footer-js">
+ <!-- Bootstrap core JavaScript-->
+    
+    <script th:src="@{/vendors/js/bootstrap.min.js}"></script>
 
-    <div class="container">
-
-        <footer>
-        <!-- this is footer -->
-        © 2017 mkyong.com
-            <span sec:authorize="isAuthenticated()">
-                | Logged user: <span sec:authentication="name"></span> |
-                Roles: <span sec:authentication="principal.authorities"></span> |
-                <a th:href="@{/logout}">Sign Out</a>
-            </span>
-
-        
-
-        </footer>
-    </div>
+    <!-- Core plugin JavaScript-->
+    <script src="/vendors/js/jquery.easing.min.js"></script>
 
 </div>
+
 </body>
 </html>

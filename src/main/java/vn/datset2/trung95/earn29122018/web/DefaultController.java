@@ -5,24 +5,39 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class DefaultController {
-	@GetMapping("/about")
+	@GetMapping("/")
     public String index() {
-        return "about";
+        return "index";
     }
 
-    @GetMapping("/admin") 
+    @GetMapping("/blank") 
     public String admin() {
-        return "home";
+        return "blank";
     }
 
-    @GetMapping("/403")
+    @GetMapping("/404")
     public String accessDenied() {
-        return "error";
+        return "404";
     }
 
     @GetMapping("/login") 
     public String getLogin() {
         return "login";
     }
-    
+    @GetMapping("/register") 
+    public String getRegister() {
+        return "register";
+    }
+    @GetMapping("/charts") 
+    public String getCharts() {
+        return "charts";
+    }
+    @GetMapping("/table") 
+    public String getTables() {
+        return "tables";
+    }
+    @GetMapping("/forgot") 
+    public String getFogot() {
+        return "forgot-password";
+    }
 }
