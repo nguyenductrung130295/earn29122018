@@ -5,9 +5,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class DefaultController {
-	@GetMapping("/about")
+	@GetMapping("/")
     public String index() {
-        return "about";
+        return "index";
     }
 
     @GetMapping("/admin") 
